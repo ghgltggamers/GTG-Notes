@@ -1,0 +1,44 @@
+
+<DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GTG Notes</title>
+    <link rel="shortcut icon" href="img/icon.png" type="image/png">
+    <link rel="stylesheet" href="theme.css">
+</head>
+<body>
+    <!-- Navigation bar for notes app -->
+    <div>
+        <nav>
+            <img src="img/icon.png" alt="icon failed to load" width="70px">
+        </nav>
+    </div>
+
+    <!-- Notes will show here -->
+    <div id="show-notes">
+        <button class="note-show">
+            <h2>
+                Welcome
+            </h2>
+            <p>
+                Hi, Welcome to GTG Notes, Your private Notes app.
+            </p>
+        </button>
+    </div>
+
+    <!-- New notes button -->
+    <button id="new-notes-button">+</button>
+    <button id="rem-notes-button">-</button>
+    <button id="rem-notes-button" style="bottom: 160px;" onclick="localStorage.clear();document.getElementById('reload').click();">x</button>
+
+    <!-- Cache element for state management -->
+    <div id="cache">
+        <a href="" id="reload"></a>
+    </div>
+</body>
+<script src="ripple.js"></script>
+<script src="gntk.js"></script>
+<script src="behaviour.js"></script>
+</html>
